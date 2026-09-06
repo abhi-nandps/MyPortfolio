@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio website showcasing skills, projects, internship, education and contact details.">
+  <title>Your Name | Personal Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+/>
+  <link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+/>
+</head>
+<body>
+  <header class="site-header" id="home">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="#home" class="logo">ABHINAND<span>PS</span></a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#internship">Internship</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow">Hello, I am</p>
+        <h1 id="hero-title">ABHINAND PS</h1>
+        <h2>Aspiring Software Developer &amp; Computer Science Student</h2>
+        <p>
+          I enjoy building clean, responsive and user-friendly web applications while continuously learning modern software development concepts.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn secondary" href="resume/resume.pdf" download>Download Resume</a>
+        </div>
+      </div>
+
+      <aside class="profile-card" aria-label="Profile image placeholder">
+        <div class="profile-placeholder">
+          <img src="images/profile3.jpeg" alt="ABHINAND PS Profile Photo" class="profile-image" />
+        </div>   
+      </aside>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-heading">
+        <h2>About Me</h2>
+      </div>
+      <div class="about-grid">
+        <article class="card about-card">
+          <p>
+            Hi, I'm ABHINAND P. S., a passionate Computer Science Engineering student with a strong interest in Full Stack Development, Artificial Intelligence, and data-driven technologies. I enjoy building practical solutions using the MERN Stack and love developing applications that are efficient, user-friendly, and impactful.
+
+            I actively explore emerging technologies to strengthen my technical expertise. My primary interests include Web Development, Artificial Intelligence, Machine Learning, Cloud Computing, and Data Analytics. I enjoy creating innovative systems that solve real-world problems while maintaining clean architecture and modern user experiences.
+          </p>
+        </article>
+        
+      </div>
+    </section>
+
+    <section class="skills-section" id="skills">
+
+     <!-- Decorative background shapes -->
+  <div class="skills-shape shape-top-left"></div>
+  <div class="skills-shape shape-top-right"></div>
+  <div class="skills-shape shape-bottom-left"></div>
+  <div class="skills-shape shape-bottom-right"></div>
+
+
+       <!-- Heading -->
+    <div class="skills-heading">
+      <p>What I Know</p>
+      <h2>Technical Skills</h2>
+      <span class="skills-line"></span>
+    </div>
+    
+     <div class="skills-container">
+    <!-- Skills Grid -->
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <i class="fa-brands fa-html5 html-icon"></i>
+        <h3>HTML5</h3>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-css3-alt css-icon"></i>
+        <h3>CSS3</h3>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-js javascript-icon"></i>
+        <h3>JavaScript</h3>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-react react-icon"></i>
+        <h3>React</h3>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-node-js node-icon"></i>
+        <h3>Node.js</h3>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-python python-icon"></i>
+        <h3>Python</h3>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-java java-icon"></i>
+        <h3>Java</h3>
+      </div>
+
+      <div class="skill-card c-card">
+        <span class="c-logo">C</span>
+        <h3>C Programming</h3>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-database mysql-icon"></i>
+        <h3>MySQL</h3>
+      </div>
+
+      <div class="skill-card mongodb-card">
+        <span class="mongodb-logo">M</span>
+        <h3>MongoDB</h3>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-git-alt git-icon"></i>
+        <h3>Git</h3>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-github github-icon"></i>
+        <h3>GitHub</h3>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+    <section class="section" id="projects">
+
+  <div class="section-heading">
+    <p>What I Have Built</p>
+    <h2>Projects</h2>
+  </div>
+
+  <div class="project-controls" aria-label="Project filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="JavaScript">JavaScript</button>
+    <button class="filter-btn" data-filter="Python">Python</button>
+    <button class="filter-btn" data-filter="Database">Database</button>
+  </div>
+
+  <div class="projects-grid" id="projectsGrid" aria-live="polite">
+
+    <!-- Zyra AI Assistant -->
+    <article class="project-card">
+
+      <div class="project-image">
+        <img src="images/chatbot.png" alt="Zyra AI Assistant">
+      </div>
+
+      <div class="project-body">
+        <h3>🤖 Zyra AI Assistant</h3>
+
+        <p>
+          AI-powered Website Development Assistant using LLMs,
+          RAG and MERN Stack.
+        </p>
+
+        <div class="project-tags">
+          <span class="tag">React</span>
+          <span class="tag">Node</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">OpenAI</span>
+        </div>
+
+        <div class="project-links">
+          <a href="#" target="_blank">Live Demo</a>
+          <a href="#" target="_blank">Repository</a>
+          <button class="details-btn">Details</button>
+        </div>
+      </div>
+
+    </article>
+
+
+    <!-- Library Management System -->
+    <article class="project-card">
+
+      <div class="project-image">
+        <img src="images/library.png" alt="Library Management System">
+      </div>
+
+      <div class="project-body">
+        <h3>📚 Library Management System</h3>
+
+        <p>
+          A MERN Stack Library Management System with Authentication,
+          Book Issue/Return, Membership Management and Dashboard.
+        </p>
+
+        <div class="project-tags">
+          <span class="tag">MongoDB</span>
+          <span class="tag">Express</span>
+          <span class="tag">React</span>
+          <span class="tag">Node.js</span>
+        </div>
+
+        <div class="project-links">
+          <a href="#" target="_blank">Live Demo</a>
+          <a href="#" target="_blank">Repository</a>
+          <button class="details-btn">Details</button>
+        </div>
+      </div>
+
+    </article>
+
+
+    <!-- College Alumni Management System -->
+    <article class="project-card">
+
+      <div class="project-image">
+        <img src="images/alumni.png" alt="College Alumni Management System">
+      </div>
+
+      <div class="project-body">
+        <h3>🎓 College Alumni Management System</h3>
+
+        <p>
+          An innovative and purpose-driven platform that aims to
+          establish and nurture a strong bond between the educational
+          institution and its alumni community.
+        </p>
+
+        <div class="project-tags">
+          <span class="tag">MongoDB</span>
+          <span class="tag">Express.js</span>
+          <span class="tag">React.js</span>
+          <span class="tag">Node.js</span>
+        </div>
+
+        <div class="project-links">
+          <a href="#" target="_blank">Live Demo</a>
+          <a href="#" target="_blank">Repository</a>
+          <button class="details-btn">Details</button>
+        </div>
+      </div>
+
+    </article>
+
+  </div>
+
+</section>
+
+    <section class="section alt-section" id="internship">
+  <div class="section-heading">
+    <p>Industry Exposure</p>
+    <h2>Internship</h2>
+  </div>
+
+  <div class="table-wrapper">
+    <table>
+      <caption>Internship History</caption>
+
+      <thead>
+        <tr>
+          <th>Organisation</th>
+          <th>Role</th>
+          <th>Duration</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- Internship 1 -->
+        <tr>
+          <td>ICT Academy of Kerala</td>
+
+          <td>Full Stack Developer Intern</td>
+
+          <td>9 Dec 2024 – 24 Jan 2025</td>
+
+          <td>
+            Worked as a Full Stack Developer Intern and gained practical
+            experience in MERN Stack development. Worked with MongoDB,
+            Express.js, React.js and Node.js to develop web applications,
+            create responsive user interfaces, build REST APIs, manage
+            databases and understand full-stack application development.
+          </td>
+        </tr>
+
+
+        <!-- Internship 2 -->
+        <tr>
+          <td>Qnayds</td>
+
+          <td>Cybersecurity Intern</td>
+
+          <td>24 Jun 2025 – 25 Jul 2025</td>
+
+          <td>
+            Gained practical knowledge in cybersecurity fundamentals and
+            ethical hacking. Learned to use Kali Linux and explored security
+            testing concepts, basic penetration testing techniques,
+            vulnerability assessment and common cybersecurity tools in a
+            controlled learning environment.
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</section>
+
+    <section class="section" id="education">
+
+  <div class="section-heading">
+    <p>Academic Background</p>
+    <h2>Education</h2>
+  </div>
+
+  <div class="table-wrapper">
+
+    <table>
+
+      <caption>Education History</caption>
+
+      <thead>
+        <tr>
+          <th>Institution</th>
+          <th>Degree / Course</th>
+          <th>Duration</th>
+          <th>Grade / Description</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <!-- B.Tech -->
+        <tr>
+          <td>
+            Mar Baselios College of Engineering and Technology (MBCET),
+            Thiruvananthapuram, Kerala
+          </td>
+
+          <td>
+            B.Tech in Computer Science and Engineering
+            <br>
+            APJ Abdul Kalam Technological University
+            <br>
+            4th Year (Pursuing)
+          </td>
+
+          <td>2023 – 2027</td>
+
+          <td>
+            CGPA: <strong>8.12 / 10</strong>
+          </td>
+        </tr>
+
+
+        <!-- Higher Secondary -->
+        <tr>
+          <td>
+            Lourdes Mount Public School,
+            Kanacode, Thiruvananthapuram
+          </td>
+
+          <td>
+            Higher Secondary Education (12th Grade)
+            <br>
+            Kerala State Board
+          </td>
+
+          <td>Completed in 2023</td>
+
+          <td>
+            Percentage: <strong>90%</strong>
+          </td>
+        </tr>
+
+
+        <!-- Secondary Education -->
+        <tr>
+          <td>
+            Lourdes Mount Public School,
+            Kanacode, Thiruvananthapuram
+          </td>
+
+          <td>
+            Secondary Education (10th Grade)
+            <br>
+            Central Board of Secondary Education (CBSE)
+          </td>
+
+          <td>Completed in 2021</td>
+
+          <td>
+            Percentage: <strong>85%</strong>
+          </td>
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+  </section>
+
+<section class="section contact-section alt-section" id="contact">
+  <div class="section-heading">
+    <p>Get In Touch</p>
+    <h2>Contact Me</h2>
+  </div>
+
+  <div class="contact-grid">
+    <article class="card contact-info">
+
+      <h3>Contact Information</h3>
+
+      <p>
+        I am interested in internships, placement opportunities and
+        collaborative projects.
+      </p>
+
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:abhinandps1221@gmail.com">
+          abhinandps1221@gmail.com
+        </a>
+      </p>
+
+      <p>
+        <strong>GitHub:</strong>
+        <a
+          href="https://github.com/abhi-nandps"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          github.com/abhi-nandps
+        </a>
+      </p>
+
+      <p>
+        <strong>LinkedIn:</strong>
+        <a
+          href="https://www.linkedin.com/in/abhinand-p-s-671668294/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          linkedin.com/in/abhinand-p-s-671668294
+        </a>
+      </p>
+
+    </article>
+
+        <article class="card">
+          <h3>Send a Message</h3>
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="name">
+              <small class="error" id="nameError"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email">
+              <small class="error" id="emailError"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="Write your message"></textarea>
+              <small class="error" id="messageError"></small>
+            </div>
+
+            <button class="btn primary" type="submit">Send Message</button>
+            <p class="form-status" id="formStatus" role="status"></p>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> YOUR NAME. Built using HTML5, CSS3 and JavaScript.</p>
+    <nav aria-label="Footer navigation">
+      <a href="#home">Back to Home</a>
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </nav>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+  <div class="modal" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Close project details">×</button>
+      <h2 id="modalTitle">Project Details</h2>
+      <p id="modalDescription"></p>
+      <div id="modalTags" class="project-tags"></div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
